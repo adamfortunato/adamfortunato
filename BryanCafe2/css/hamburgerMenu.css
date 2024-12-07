@@ -1,0 +1,62 @@
+/* Mobile Menu */
+.mobileMenuContainer {
+    position: relative;
+}
+
+.toggler {
+    display: none;
+}
+
+.hamburger {
+    cursor: pointer;
+    z-index: 1000;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 30px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hamburger div {
+    height: 3px;
+    width: 100%;
+    background: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.mobileMenuModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+    transition: transform 0.4s ease-in-out;
+    z-index: 500;
+}
+
+.mobileMenuModal ul {
+    list-style: none;
+    text-align: center;
+}
+
+.mobileMenuModal ul li {
+    margin: 15px 0;
+}
+
+.mobileMenuModal ul li a {
+    color: #fff;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.toggler:checked ~ .mobileMenuModal {
+    transform: scale(1);
+}

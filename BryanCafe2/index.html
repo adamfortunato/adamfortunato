@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/c0c1ac414c.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="css/template.css">
+    <link rel="stylesheet" href="css/hamburgerMenu.css">
+    <link rel="stylesheet" href="css/content.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Bryan's Café</title>
+</head>
+
+<body>
+    <div class="container-fluid p-0"> <!-- Added p-0 to remove padding -->
+        <div class="mobileMenuContainer">
+            <input title="toggler" type="checkbox" class="toggler">
+            <div class="mobileButtonStyle hamburger perfectCenter">
+                <div></div>
+            </div>
+            <div class="mobileMenuModal mobileMenu">
+                <ul>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <nav class="p-0"> <!-- Removed extra padding -->
+            <a href="index.html">
+                <img id="logo" src="images/logo.png" alt="Image Not Loaded">
+            </a>
+            <ul class="nav">
+                <li><a class="nav-link" href="index.html">About</a></li>
+                <li><a class="nav-link" href="menu.html">Menu</a></li>
+                <li><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="mainWrapper">
+            <main>
+                <div class="container-fluid mb-3">
+                    <div class="row">
+                        <img class="banner m-1" src="images/banner.png" alt="Bryan's Cafe Banner">
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-4 justify-content-center">
+                            <img class="photo" src="images/about.jpg" alt="Bryan's Cafe About Picture">
+                        </div>
+                        <div class="col-md-8" style="text-align: justify;">
+                            <h3>ABOUT US</h3>
+                            Welcome to Bryan’s Café, a cozy retreat for coffee lovers and food enthusiasts. With multiple branches in key Sydney locations, we are committed to delivering fresh, wholesome meals and a warm, inviting atmosphere for all our guests. Whether you're dropping by for your morning coffee, enjoying a leisurely brunch, or meeting friends over a light meal, Bryan’s Café offers something special for everyone.
+                            At Bryan’s Café, we believe in using only the freshest ingredients, with an emphasis on locally sourced produce. From our handcrafted beetroot and feta salads to our signature sourdough rye sandwiches, every dish reflects our dedication to quality. We invite you to explore our diverse menu, featuring vegetarian options and a variety of beverages that cater to all tastes.
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-8" style="text-align: justify;">
+                            <h3>OUR HISTORY</h3>
+                            Bryan’s Café began with a simple vision: to create a space where community and great food come together. What started as a small café in Surry Hills has now grown into three vibrant locations across Sydney, offering a friendly spot for locals and visitors alike.
+                            Over the years, Bryan’s Café has evolved, but our commitment to quality, service, and community remains unchanged. Each of our branches offers a unique blend of tradition and modernity, balancing classic favorites with new flavors that reflect our passion for culinary excellence.
+                        </div>
+                        <div class="col-md-4 justify-content-center">
+                            <img class="photo" src="images/history.jpg" alt="Bryan's Cafe About Picture">
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <footer class="p-0"> <!-- Removed margin to ensure full width -->
+            &copy;<span id="currentYear"></span> Bryan's Cafe | <a href="privacyPolicy.html" target="">Privacy Policy</a>
+        </footer>
+    </div>
+
+    <script type="text/javascript">
+        document.querySelector("#currentYear").innerHTML = getCurrentYear();
+    </script>
+</body>
+</html>
